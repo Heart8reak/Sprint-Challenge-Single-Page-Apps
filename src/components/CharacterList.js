@@ -27,12 +27,13 @@ export default function CharacterList(props) {
   return (
     <section className="character-list">
       <Grid
-        containerdirection="row"
+        container
+        direction="row"
         justify="space-around"
         alignItems="flex-start"
       >
-        <Link to="/"><Button>Home</Button></Link>
-        <Link to="/search"><Button>Search</Button></Link>
+        <Link to="/"><Button variant="outlined" color="primary">Home</Button></Link>
+        <Link to="/search"><Button variant="outlined" color="primary">Search</Button></Link>
       </Grid>
 
       <br />
@@ -42,7 +43,7 @@ export default function CharacterList(props) {
         <Grid
           container
           direction="row"
-          justify="space-aroound"
+          justify="space-around"
           alignItems="flex-start"
         >
           <CharacterCard
@@ -53,11 +54,8 @@ export default function CharacterList(props) {
             imageURL={character.image}
             gender={character.gender}
           />
-
         </Grid>
       ))}
-
-
     </section>
   );
 }

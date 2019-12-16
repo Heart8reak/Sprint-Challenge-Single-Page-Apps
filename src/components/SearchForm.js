@@ -30,19 +30,21 @@ export default function SearchForm(props) {
       <Grid
         container
         direction="row"
-        justify="space-aroound"
+        justify="space-around"
         alignItems="flex-start"
       >
         <TextField
           id="name"
-          label="SearchCharacters"
+          label="Search Characters"
           type="search"
           margin="normal"
           variant="outlined"
           value={search}
           onChange={HandleChange}
         />
-        <Link to="/"><Button>Home</Button></Link>
+        <Link
+          to="/"
+        ><Button variant="outlined" color="primary">Home</Button></Link>
       </Grid>
       <br />
       <br />
@@ -50,7 +52,8 @@ export default function SearchForm(props) {
       {data.map((char => {
         return (
           <Grid
-            containerdirection="row"
+            container
+            direction="row"
             justify="space-around"
             alignItems="flex-start"
           >

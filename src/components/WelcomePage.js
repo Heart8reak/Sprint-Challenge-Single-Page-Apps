@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "@material-ui/core";
+import { Grid, Button } from "@material-ui/core";
 import "../index.css";
 
 export default function WelcomePage() {
@@ -8,6 +8,7 @@ export default function WelcomePage() {
     <section className="welcome-page">
       <header>
         <h1>Welcome to the ultimate fan site!</h1>
+
 
         <div className="header-style">
           <img
@@ -17,8 +18,18 @@ export default function WelcomePage() {
           />
         </div>
 
-        <Link to="/characters"><Button>Characters</Button></Link>
-        <Link to="/characters"><Button>Search</Button></Link>
+        <Grid
+          container
+          direction="row"
+          justify="space-around"
+          alignItems="flex-start"
+        >
+          <Link to="/characters"><Button variant="outlined" color="primary">Characters</Button></Link>
+          <Link to="/characters"><Button variant="outlined" color="primary">Search</Button></Link>
+
+        </Grid>
+
+
       </header>
     </section>
   );
