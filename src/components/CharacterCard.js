@@ -15,7 +15,7 @@ export default function CharacterCard({ name, imageURL, species, status, gender 
   const classes = useStyle();
 
   return (
-    <Card>
+    <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           component="img"
