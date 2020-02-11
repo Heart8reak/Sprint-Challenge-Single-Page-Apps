@@ -1,0 +1,4 @@
+[build]
+base = "SPRINT-CHALLENGE-SINGLE-PAGE-APPS/"
+publish = "SPRINT-CHALLENGE-SINGLE-PAGE-APPS/src/"
+command = "yarn build"
